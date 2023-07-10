@@ -102,7 +102,7 @@ public class BackgroundGeolocation : CAPPlugin, CLLocationManagerDelegate {
             }
             manager.distanceFilter = distanceFilter!
             manager.allowsBackgroundLocationUpdates = background
-            manager.showsBackgroundLocationIndicator = background
+            manager.showsBackgroundLocationIndicator = false
             manager.pausesLocationUpdatesAutomatically = false
             self.watchers.append(watcher)
             if call.getBool("requestPermissions") != false {
